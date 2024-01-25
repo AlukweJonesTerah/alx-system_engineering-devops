@@ -3,7 +3,7 @@
 
 count=10
 
-until [ $count -lt 1 ]; do
+until [ $count -lt 0 ]; do
 	echo "Best School"
-	(( count++ ))
+	let count=count-1
 done
